@@ -9,22 +9,22 @@ const BUSINESS_STRATEGY_SUBTITLE="How we do it";
 
 const LEFT_COMPONENT=
   {
-    src:"/logo512.png",
-    altText:"Banner Photo",
-    title:"Out Strategy"
+    src:"images/OurStrategy.jpeg",
+    altText:"Our Strategy",
+    title:"Our Strategy"
   }
 ;
 const RIGHT_COMPONENT=
   {
-    src:"/logo512.png",
-    altText:"Banner Photo",
+    src:"images/Tech.jpeg",
+    altText:"Tech",
     title:"Tech"
 
 };
 const EQUALS_COMPONENT=
   {
-    src:"/logo512.png",
-    altText:"Banner Photo",
+    src:"images/StockMarket.jpeg",
+    altText:"StockMarket",
     title:"Sales & Growth"
 
 };

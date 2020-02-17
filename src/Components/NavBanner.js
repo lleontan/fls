@@ -10,14 +10,14 @@ import '../App.css';
 const BANNER_TITLE="FIRST LIGHT STUDIOS";
 const NAV_LINKS=[
   {text:"Home", href:"/"},
-  {text:"Contact", href:"/contact"}
+  {text:"Contact Us", href:"/contact"}
 ];
-const SINGLE_CONTACT_BUTTON= {text:"Contact", href:"/contact"};
-const SHOW_ALL_NAVLINKS=false;
+const SINGLE_CONTACT_BUTTON= {text:"Contact Us", href:"/contact"};
+const SHOW_ALL_NAVLINKS=true;
 class SingleContactButton extends Component{
   render(){
     return(
-    <div className='SingleContactButton'>
+    <div className='SingleContactButton BoxedLinkRect'>
       <Link to={SINGLE_CONTACT_BUTTON.href}>{SINGLE_CONTACT_BUTTON.text}</Link>
     </div>);
   }
@@ -28,7 +28,7 @@ class MultiContactButton extends Component{
       return <NavBannerLink text={obj.text} href={obj.href}/>
     });
     return(
-      <div>
+      <div className="NavBannerLinksDiv">
       {navBannerLinks}
       </div>
     );
@@ -36,7 +36,7 @@ class MultiContactButton extends Component{
 }
 class NavBannerLink extends Component{
   render(){
-    return <div>
+    return <div className="NavBannerLinkDiv">
       <Link to={this.props.href}>{this.props.text}</Link>
     </div>;
   }
@@ -55,8 +55,13 @@ class NavBanner extends Component{
   render(){
     return(
       <div className="NavBanner">
+        <div>
+        {/*
+          Note: This div controls the top and bottom margin for the navbar;
+          */}
         <h1>{BANNER_TITLE}</h1>
         {<ChooseMultiOrSingleLinks/>}
+        </div>
       </div>
     )
   }

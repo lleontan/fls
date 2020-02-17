@@ -6,36 +6,36 @@ import '../App.css';
 */
 const SERVICES_HEADER="What we do";
 const SERVICES_LIST=[{
-  title:"Service 1",
-  src:"/logo512.png",
-  altText:"Service 1 alt text"
+  title:"Content generation",
+  src:"images/ContentGeneration.jpeg",
+  altText:"Content generation"
 },{
-  title:"Service 2",
-  src:"/logo512.png",
-  altText:"Service 1 alt text"
+  title:"SEO optimization",
+  src:"images/Optimization.jpeg",
+  altText:"SEO optimization"
 },{
-  title:"Service 3",
-  src:"/logo512.png",
-  altText:"Service 1 alt text"
+  title:"Marketing strategy",
+  src:"images/MarketingStrategy.jpg",
+  altText:"Marketing strategy"
 },{
-  title:"Service 4",
-  src:"/logo512.png",
-  altText:"Service 1 alt text"
+  title:"Inventory management",
+  src:"images/InventoryManagement.jpeg",
+  altText:"Inventory management"
 },{
-  title:"Service 5",
-  src:"/logo512.png",
-  altText:"Service 1 alt text"
+  title:"Digital marketing",
+  src:"images/DigitalMarketing.jpeg",
+  altText:"Digital marketing"
 },{
-  title:"Service 6",
-  src:"/logo512.png",
-  altText:"Service 1 alt text"
+  title:"Creative",
+  src:"images/CreativeDesign.jpeg",
+  altText:"Creative"
 }];
 class ServicesImageBlock extends Component{
 
   render(){
     let propsData=this.props.data;
     return(
-    <div className="ServicesImageBlock">
+    <div className="ServicesImageBlock ImageBlock">
         <img src={propsData.src} title={propsData.altText}></img>
         <span>{propsData.title}</span>
     </div>);
@@ -50,7 +50,7 @@ class ServicesBlock extends Component{
 
   render(){
     return(
-    <div className="ServicesBlock">
+    <div className="ServicesBlock WrappedImageBlockRow">
       {servicesList()}
     </div>);
   }

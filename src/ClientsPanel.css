@@ -1,0 +1,48 @@
+.ClientsPanel{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.ClientsPanel img{
+  width: 7em;
+  height: 4em;
+
+}
+.ClientsPanel span{
+  white-space: pre;
+}
+.ClientsPanel span, .ClientsPanel img{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.ClientImageBlock.ImageBlock{
+  margin-left: 0em;
+  margin-right: 0em;
+  width: 8em;
+}
+
+ @media only screen and (min-width: 600px) {
+   .ClientImageBlock.ImageBlock{
+     margin-left: .3em;
+     margin-right: .3em;
+     width: 10em;
+
+   }
+   .ClientsPanel img{
+     width: 8em;
+     height:5em;
+   }
+ }
+ @media only screen and (min-width: 1200px) {
+   .ClientImageBlock.ImageBlock{
+     margin-left: 1em;
+     margin-right: 1em;
+     width: 13em;
+
+   }
+   .ClientsPanel img{
+     width: 12em;
+     height: 7em;
+   }
+ }

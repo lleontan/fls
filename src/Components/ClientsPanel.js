@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {Link} from "react-router-dom";
-import '../ClientsPanel.css';
 import '../App.css';
+import '../ImageBlocks.css';
+import '../ClientsPanel.css';
+
 
 const INCLUDES_CLIENTS_TITLE = "Includes Businesses Such As";
 const CLIENTS = [

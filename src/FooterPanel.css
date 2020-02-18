@@ -1,0 +1,22 @@
+.FooterPanel{
+  background-color: #C87E05;
+}
+.FooterMain{
+  display: flex;
+  flex-direction: row;
+}
+
+.FooterMain >div{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+.FooterMain .BiparteImageBlock{
+  margin:3em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.FooterMain .BiparteImageBlock img{
+  width: 8em;
+}

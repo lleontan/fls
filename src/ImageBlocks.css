@@ -1,0 +1,42 @@
+.BiparteImageBlock{
+  display: flex;
+  flex-direction: column;
+}
+.BiparteImageBlock img,.BiparteImageBlock span{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.ImageBlock{
+  width: 10em;
+}
+.ImageBlock span, .ImageBlock img{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.WrappedImageBlockRow{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.WrappedImageBlockRow > * {
+  margin-top: 1em;
+}
+.WrappedImageBlockRow span{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.WrappedImageBlockRow .ImageBlock{
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}

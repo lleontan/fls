@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import '../ImageBlocks.css';
+
 import '../App.css';
+
 import ServicesPanel from './ServicesPanel';
 import BusinessStrategyPanel from './BusinessStrategyPanel';
 import ContactFormPanel from './ContactFormPanel';

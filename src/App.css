@@ -90,6 +90,9 @@ img{
 .LargeBodyFontSize{
   font-size: 4em;
 }
+.MediumBodyFontSize{
+  font-size: 1em;
+}
 .Secondary{
   color: white;
   background-color:#FFAE42;
@@ -101,6 +104,8 @@ img{
   color:white;
 }
 .NavBanner{
+  position: relative;
+  top:0px;
   background-color: #C87E05;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -168,6 +173,10 @@ img{
 }
 .TopMargin2em{
   margin-top: 2em;
+}
+.TopBottomMargin2em{
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 .TopBottomMargin1em{
   margin-top: 1em;
@@ -266,40 +275,8 @@ img{
   width: 9em;
   height: 6em;
 }
-.ImageBlock{
-  width: 10em;
-}
-.ImageBlock span, .ImageBlock img{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.WrappedImageBlockRow{
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.WrappedImageBlockRow > * {
-  margin-top: 1em;
-}
-.WrappedImageBlockRow span{
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
 .ServicesBlock{
   max-width: 60%;
-}
-.WrappedImageBlockRow .ImageBlock{
-
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .BusinessStrategyPanel{

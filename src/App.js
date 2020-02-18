@@ -5,6 +5,7 @@ import {BrowserRouter, Switch, Route, Redirect, Link} from "react-router-dom";
 import MainPage from "./Components/MainPage";
 import ContactPage from "./Components/ContactPage";
 import NavBanner from "./Components/NavBanner";
+import FooterPanel from "./Components/FooterPanel";
 
 class App extends Component {
   constructor(props) {
@@ -25,6 +26,7 @@ class App extends Component {
               <Redirect to="/"/>
             </Switch>
           </main>
+          <FooterPanel/>
         </div>
     );
   }

@@ -42,8 +42,8 @@ class ServicesImageBlock extends Component{
   }
 }
 let servicesList=()=>{
-    return SERVICES_LIST.map((element)=>{
-      return <ServicesImageBlock data={element}/>;
+    return SERVICES_LIST.map((element,index)=>{
+      return <ServicesImageBlock key={index+"ServicesImageBlock"}data={element}/>;
     });
   }
 class ServicesBlock extends Component{

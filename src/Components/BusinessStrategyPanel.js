@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import CtaBanner from './CtaBanner';
 import MultilineSpanParagraph from './MultilineSpanParagraph'
 import '../App.css';
+import '../BusinessStrategyPanel.css';
+
 /*
   This file the design of the services panel found in the main page.
 */
@@ -67,8 +69,8 @@ class StrategyImageBlock extends Component{
   }
 }
 let closingLinesList=()=>{
-    return CLOSING_PITCH_LINES.map((element)=>{
-      return <span>{element}</span>;
+    return CLOSING_PITCH_LINES.map((element, index)=>{
+      return <span key={index+"pitchlines"}>{element}</span>;
     });
   }
 

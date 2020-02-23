@@ -1,0 +1,32 @@
+
+.BusinessStrategyPanel{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.BusinessStrategyPanel >h2{
+  margin-top: .2vh;
+  margin-bottom: .1vh;
+}
+.SuccessEquation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .StrategyImageBlock{
+   display: flex;
+   margin-left: 1em;
+   margin-right: 1em;
+   flex-direction: column;
+   align-items: center;
+ }
+ .ClosingPitchLines{
+   display: flex;
+   flex-direction: column;
+   margin-top: 3vh;
+ }

@@ -7,8 +7,8 @@ import '../App.css';
   Each object should contain the spans text and any additional classes styling it.
 */
 function returnSpansAsLine(elements){
-  return elements.map((element)=>{
-    return <span className={element.additionalClasses}>{element.text}</span>
+  return elements.map((element,index)=>{
+    return <span key={index+"spanIndex"}className={element.additionalClasses}>{element.text}</span>
   });
 }
 class MultilineSpanLine extends Component{
@@ -22,8 +22,8 @@ class MultilineSpanLine extends Component{
 class MultilineSpanParagraph extends Component{
   render(){
     let lines=this.props.lines;
-    let returnedLines=lines.map((element)=>{
-      return <MultilineSpanLine spans={element}/>
+    let returnedLines=lines.map((element,index)=>{
+      return <MultilineSpanLine key={index+"MultilineSpanParagraph"} spans={element}/>
     });
     return (
       <div className="MultilineSpanParagraph">

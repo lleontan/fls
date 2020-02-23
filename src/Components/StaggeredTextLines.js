@@ -16,7 +16,7 @@ class StaggeredTextLines extends Component{
         let marginNum=index*leftMargin;
         let margin=marginNum+"em";
         let elementStyle={marginLeft:margin};
-        return <span style={elementStyle}>{element}</span>;
+        return <span key={index+"staggeredTextLines"} style={elementStyle}>{element}</span>;
       });
   }
   render(){

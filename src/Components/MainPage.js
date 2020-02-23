@@ -58,6 +58,7 @@ class MainPage extends Component{
   render(){
     return (
       <div className="MainPage">
+      <a id="MainPageTop">          </a>
         <BannerImage/>
         <div className="Primary">
           <MissionStatement/>
@@ -65,7 +66,9 @@ class MainPage extends Component{
           <ClientsPanel/>
           <ServicesPanel/>
           <BusinessStrategyPanel/>
-          <ContactFormPanel/>
+          <a id="contactForm">          </a>
+
+            <ContactFormPanel/>
         </div>
     </div>);
   }

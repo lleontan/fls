@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {
-  Link } from "react-router-dom";
+  import { HashLink as Link } from 'react-router-hash-link';
+
 import '../App.css';
 
 /*
@@ -9,8 +9,8 @@ import '../App.css';
 */
 const BANNER_TITLE="FIRST LIGHT STUDIOS";
 const NAV_LINKS=[
-  {text:"Home", href:"/",additionalClassNames:""},
-  {text:"Contact Us", href:"/contact", additionalClassNames:"HighlightBlueBox"}
+  {text:"Home", href:"/#MainPageTop",additionalClassNames:""},
+  {text:"Contact Us", href:"/#contactForm", additionalClassNames:"HighlightBlueBox"}
 ];
 const SINGLE_CONTACT_BUTTON= {text:"Contact Us", href:"/contact"};
 const SHOW_ALL_NAVLINKS=true;
@@ -24,8 +24,8 @@ class SingleContactButton extends Component{
 }
 class MultiContactButton extends Component{
   render(){
-    let navBannerLinks=NAV_LINKS.map((obj)=>{
-      return <NavBannerLink text={obj.text} href={obj.href} additionalClassNames={obj.additionalClassNames}/>
+    let navBannerLinks=NAV_LINKS.map((obj,index)=>{
+      return <NavBannerLink key={index+"navBannerLinks"} text={obj.text} href={obj.href} additionalClassNames={obj.additionalClassNames}/>
     });
     return(
       <div className="NavBannerLinksDiv">

@@ -3,4 +3,45 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
+  color: black;
+}
+
+.ContactFormPanel>form>div{
+  margin-bottom: .7em;
+  min-width: 40vw;
+}
+.ContactFormPanel>form>div .FlexColumn{
+  margin-top: .3em;
+  margin-right: 1em;
+}
+textarea{
+  font-size: .2em;
+}
+.ContactFormPanel input[type="email"],
+.ContactFormPanel input[type="text"],
+.ContactFormPanel input[type="tel"]{
+  outline-color: black;
+  outline-width: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+  border-radius: 1px;
+  font-size: 1.2em;
+  padding: 7px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+}
+.ContactFormPanel input[type="submit"]{
+  outline: none;
+}
+@media only screen and (min-width: 600px) {
+  textarea{
+    font-size: .3em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  textarea{
+    font-size: .9em;
+  }
 }

@@ -44,8 +44,8 @@ class ClientImageBlock extends Component {
   }
 }
 let clientsList = () => {
-  return CLIENTS.map((element) => {
-    return <ClientImageBlock data={element}/>;
+  return CLIENTS.map((element,index) => {
+    return <ClientImageBlock key={index+"ClientImageBlock"}data={element}/>;
   });
 }
 class ClientsImageBlockContainer extends Component {

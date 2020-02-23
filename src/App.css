@@ -41,6 +41,10 @@
     border-radius: 1px;
     padding: .5em;
 }
+.FlexRow{
+    display: flex;
+    flex-direction: row;
+}
 .FlexColumn{
   display: flex;
   flex-direction: column;
@@ -351,6 +355,9 @@ img{
  .MultilineSpanParagraph p, .MultilineSpanParagraph span{
    margin-top: .0em;
    margin-bottom: .0em;
+ }
+ .RedText{
+   color: red !important;
  }
 
  @media only screen and (min-width: 600px) {

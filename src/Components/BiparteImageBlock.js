@@ -21,9 +21,9 @@ class VariableLink extends Component {
 class BiparteImageBlock extends Component {
   render() {
     return (
-      <div className="BiparteImageBlock">
+      <div className="BiparteImageBlock FixedWidth17em">
         <img src={this.props.imgSrc}/>
-        <div className="FullScreenWidthLine"></div>
+        <div className="FullScreenWidthLine BackgroundColorBlack"></div>
         <VariableLink href={this.props.href} text={this.props.linkText}/>
       </div>
     )

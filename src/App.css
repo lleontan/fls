@@ -45,14 +45,17 @@
   display: flex;
   flex-direction: column;
 }
+.BackgroundColorBlack{
+  background-color: #000000 !important;
+}
 .FullScreenWidthLine{
   width:100%;
   margin-top: 1px;
   margin-bottom: 1px;
   margin-left: auto;
   margin-right: auto;
-  height:.16rem;
-  background-color: #00B8FF;
+  height:.11rem;
+  background-color: #00D1FF;
 }
 #root> div{
   padding: 0px;
@@ -65,12 +68,18 @@ body{
   font-size: .8rem;
   display: flex;
   flex-direction: column;
-  background-color: #C87E05;
+  background-color: #FFAE42;
   color:white;
+}
+a:hover{
+  color: #fc0828;
 }
 img{
   width: 5em;
   height: 5em;
+}
+.FixedWidth17em{
+  width: 17em !important;
 }
 .StaggeredTextLines{
   display: flex;
@@ -93,6 +102,16 @@ img{
 .MediumBodyFontSize{
   font-size: 1em;
 }
+.HighlightBlueBox{
+  background-color:#00B8FF !important;
+  padding: .3em;
+  border-radius: 1px;
+  box-shadow: -1px 1px 2px #000000;
+}
+.SecondaryColorEnforced{
+  color: white !important;
+  background-color: #FFAE42 !important;
+}
 .Secondary{
   color: white;
   background-color:#FFAE42;
@@ -103,6 +122,7 @@ img{
 .Secondary a:visited{
   color:white;
 }
+
 .NavBanner{
   position: relative;
   top:0px;
@@ -111,8 +131,8 @@ img{
   margin-bottom: 0px;
 }
 .NavBanner >div, .BannerImage >div.Secondary{
-  padding-left: 2.2em;
-  padding-right: 2.2em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
 }
 .NavBanner >div{
   display: flex;
@@ -126,7 +146,7 @@ img{
 .NavBanner h1{
   display:inline;
   word-wrap: break-word;
-  font-size: 1.4em;
+  font-size: 1.0em;
 }
 .NavBannerLinksDiv{
   display: flex;
@@ -139,6 +159,9 @@ img{
   font-size: .9em;
   margin-right: 2em;
 }
+.NavBannerLinkDiv a{
+  transition: color 0.5s ease;
+}
 .NavBannerLinkDiv a:link{
   color:white;
   text-decoration:none;
@@ -146,7 +169,12 @@ img{
 .NavBannerLinkDiv a:visited{
   color:white;
 }
-
+.NavBanner a:hover{
+  color:#fc0828;
+}
+.BoldSubtitle{
+  font-size: 1.2em;
+}
 .MainPage{
   display: flex;
   flex-direction: column;
@@ -199,10 +227,10 @@ img{
   margin-right: .5em;
 }
 .BannerImage h2{
-  font-size: 1.8em;
+  font-size: 1.1em;
 }
 .BannerImage .StaggeredTextLines{
-  font-size: 3em;
+  font-size: 2.4em;
   margin-top: auto;
   margin-bottom: auto;
   padding-top: .1em;
@@ -226,7 +254,7 @@ img{
 .BannerImage img{
   margin-top: auto;
   margin-bottom: auto;
-  width: 10em;
+  width: 15em;
   height: 100%;
   margin-left: 4vw;
 }
@@ -307,19 +335,43 @@ img{
    flex-direction: column;
    margin-top: 3vh;
  }
+ .CtaBanner{
+   font-size: 2em;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #AD6800;
+   color: white;
+   width: 90vw;
+   margin:0em;
+   padding:0em;
+ }
+  .MultilineSpanParagraph{
+    margin-top: 1em;
+  }
+ .MultilineSpanParagraph p, .MultilineSpanParagraph span{
+   margin-top: .0em;
+   margin-bottom: .0em;
+ }
 
  @media only screen and (min-width: 600px) {
    .NavBanner h1{
-     font-size: 1.5em;
+     font-size: 1.3em;
    }
-   .BannerImage h2{
+
+   .BannerImage .StaggeredTextLines{
      font-size: 2em;
    }
+   .BannerImage h2{
+     font-size: 1.3em;
+   }
    .BannerImage img{
-     width: 20em;
-     margin-left: 8vw;
+     width: 16em;
+     margin-left: 6vw;
    }
    .NavBannerLinkDiv{
+     font-size: 1.3em;
+   }
+   .SlightlyLargerBodyFontSize{
      font-size: 1.3em;
    }
    .LargeBodyFontSize{
@@ -336,6 +388,13 @@ img{
  @media only screen and (min-width: 1200px) {
    .NavBanner h1{
      font-size: 2em;
+   }
+   .BannerImage .StaggeredTextLines{
+     font-size: 3em;
+   }
+   .BannerImage img{
+     width: 20em;
+     margin-left: 8vw;
    }
    .LargeBodyFontSize{
      font-size: 4em;

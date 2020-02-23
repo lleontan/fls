@@ -9,8 +9,8 @@ import '../App.css';
 */
 const BANNER_TITLE="FIRST LIGHT STUDIOS";
 const NAV_LINKS=[
-  {text:"Home", href:"/"},
-  {text:"Contact Us", href:"/contact"}
+  {text:"Home", href:"/",additionalClassNames:""},
+  {text:"Contact Us", href:"/contact", additionalClassNames:"HighlightBlueBox"}
 ];
 const SINGLE_CONTACT_BUTTON= {text:"Contact Us", href:"/contact"};
 const SHOW_ALL_NAVLINKS=true;
@@ -25,7 +25,7 @@ class SingleContactButton extends Component{
 class MultiContactButton extends Component{
   render(){
     let navBannerLinks=NAV_LINKS.map((obj)=>{
-      return <NavBannerLink text={obj.text} href={obj.href}/>
+      return <NavBannerLink text={obj.text} href={obj.href} additionalClassNames={obj.additionalClassNames}/>
     });
     return(
       <div className="NavBannerLinksDiv">
@@ -37,7 +37,7 @@ class MultiContactButton extends Component{
 class NavBannerLink extends Component{
   render(){
     return <div className="NavBannerLinkDiv">
-      <Link to={this.props.href}>{this.props.text}</Link>
+      <Link to={this.props.href} className={this.props.additionalClassNames}>{this.props.text}</Link>
     </div>;
   }
 }
@@ -54,7 +54,7 @@ class NavBanner extends Component{
 
   render(){
     return(
-      <div className="NavBanner">
+      <div className="NavBanner SecondaryColorEnforced">
         <div>
         {/*
           Note: This div controls the top and bottom margin for the navbar;

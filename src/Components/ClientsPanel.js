@@ -10,24 +10,24 @@ const INCLUDES_CLIENTS_TITLE = "Includes Businesses Such As";
 const CLIENTS = [
   {
     title: "Kodak",
-    href: "www.kodak.com",
+    href: "https://www.kodak.com/corp/default.htm",
     altText: "Kodak",
     src: "/images/KodakLogo.png"
-  }, {
-    title: "Zest Soap",
-    href: "ZestLogo.jpg",
-    altText: "Zest",
-    src: "/images/ZestLogo.jpg"
+  },{
+    title: "Golite",
+    href: "https://golite.com/",
+    altText: "Golite",
+    src: "/images/GoliteLogo.jpg"
   }, {
     title: "Thicker Fuller Hair",
     href: "https://www.thickerfullerhair.com/",
     altText: "Thicker Fuller Hair",
     src: "/images/ThickerFullerHairLogo.png"
   }, {
-    title: "Golite",
-    href: "https://golite.com/",
-    altText: "Golite",
-    src: "/images/GoliteLogo.jpg"
+    title: "Zest Soap",
+    href: "https://zest.com/",
+    altText: "Zest",
+    src: "/images/ZestLogo.jpg"
   }
 ];
 class ClientImageBlock extends Component {
@@ -35,8 +35,10 @@ class ClientImageBlock extends Component {
     let propsData = this.props.data;
     return (
       <div className="ClientImageBlock ImageBlock">
-        <img src={propsData.src} title={propsData.altText}></img>
-        <span>{propsData.title}</span>
+        <a href={propsData.href}>
+          <img src={propsData.src} title={propsData.altText}></img>
+          <span>{propsData.title}</span>
+        </a>
       </div>
     );
   }
@@ -58,7 +60,7 @@ class ClientsPanel extends Component {
   render() {
     return (
       <div className="ClientsPanel">
-        <span className="CenteredDiv TopMargin2em">{INCLUDES_CLIENTS_TITLE}</span>
+        <span className="CenteredDiv TopMargin2em BoldSubtitle">{INCLUDES_CLIENTS_TITLE}</span>
         <div className="FullScreenWidthLine"></div>
         <ClientsImageBlockContainer/>
       </div>

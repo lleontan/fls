@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import CtaBanner from './CtaBanner';
+import MultilineSpanParagraph from './MultilineSpanParagraph'
 import '../App.css';
 /*
   This file the design of the services panel found in the main page.
@@ -42,8 +44,17 @@ const EQUALS_SIGN=
     title:""
 
 };
-const CLOSING_PITCH_LINES=["Case price month to month",
+const CLOSING_PITCH_LINES=["Transparent pricing. Month-to-month",
 "Set up in 2 weeks. No long-term contracts"];
+const ALTERNATE_CLOSING_LINES=[
+  [{text:"Transparent pricing. Month-to-month.", additionalClasses:""}],
+  [
+    {text:"Set up in two weeks. ", additionalClasses:""},
+    {text:"No long term contracts.", additionalClasses:"EmphasisFont SlightlyLargerBodyFontSize"}
+  ],[
+    {text:"Join Today!", additionalClasses:"altText LargeBodyFontSize EmphasisFont"}
+  ]
+];
 class StrategyImageBlock extends Component{
 
   render(){
@@ -65,7 +76,7 @@ class BusinessStrategyPanel extends Component{
   render(){
     return (
       <div className="BusinessStrategyPanel">
-      <h2>{BUSINESS_STRATEGY_HEADER}</h2>
+      <CtaBanner additionalClasses="" text={BUSINESS_STRATEGY_HEADER}/>
       <h3>{BUSINESS_STRATEGY_SUBTITLE}</h3>
       <div className="SuccessEquation">
         <StrategyImageBlock data={LEFT_COMPONENT}/>
@@ -75,8 +86,11 @@ class BusinessStrategyPanel extends Component{
         <StrategyImageBlock data={EQUALS_COMPONENT}/>
       </div>
       <div className="ClosingPitchLines">
-        {closingLinesList()}
+        {/*closingLinesList()*/}
+        <MultilineSpanParagraph lines={ALTERNATE_CLOSING_LINES}/>
       </div>
+      <CtaBanner additionalClasses="" text={BUSINESS_STRATEGY_HEADER}/>
+
     </div>);
   }
 }

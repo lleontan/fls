@@ -7,9 +7,25 @@
   margin-right: auto;
   text-align: center;
 }
-
+.BiparteImageBlock img{
+  margin-bottom: .7rem;
+}
+.BiparteImageBlock span{
+  margin-top: .5rem;
+}
 .ImageBlock{
-  width: 10em;
+  width: 8em;
+}
+.ImageBlock img{
+  border-radius: 3px;
+  border-width: 1px;
+  border-style:solid;
+}
+.ImageBlock span{
+  margin-top: .4em;
+  font-weight:normal;
+  font-style: italic;
+  font-size: 1.1em;
 }
 .ImageBlock span, .ImageBlock img{
   margin-left: auto;
@@ -39,4 +55,15 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+  .ImageBlock{
+    width: 8em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .ImageBlock{
+    width: 11em;
+  }
 }

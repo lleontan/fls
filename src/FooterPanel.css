@@ -1,9 +1,9 @@
-.FooterPanel{
-  background-color: #C87E05;
-}
+
 .FooterMain{
+  margin-left: 0em;
   display: flex;
   flex-direction: row;
+  font-size: .7em;
 }
 
 .FooterMain >div{
@@ -13,10 +13,37 @@
   margin-right: auto;
 }
 .FooterMain .BiparteImageBlock{
-  margin:3em;
   margin-top: auto;
   margin-bottom: auto;
+  margin:1em;
 }
 .FooterMain .BiparteImageBlock img{
-  width: 8em;
+  width: 5em;
+}
+@media only screen and (min-width: 600px) {
+  .FooterMain{
+    margin-left: .2em;
+    font-size: .9em;
+  }
+
+  .FooterMain .BiparteImageBlock{
+    margin:.6em;
+  }
+  .FooterMain .BiparteImageBlock img{
+    width: 5.5em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .FooterMain{
+    margin-left: 1em;
+    font-size: 1em;
+
+  }
+  .FooterMain .BiparteImageBlock{
+    margin-left:2em;
+    margin-right:2em;
+  }
+  .FooterMain .BiparteImageBlock img{
+    width: 6em;
+  }
 }

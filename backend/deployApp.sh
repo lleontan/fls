@@ -1,0 +1,9 @@
+DOCKER_BUILD_NAME="$DOCKER_USERNAME/fls-server"
+DOCKER_IMAGE_NAME="flsServer"
+REMOVE_ALL_DOCKER_CONTAINERS="docker rm -vf \$(docker ps -a -q)"
+docker pull $DOCKER_BUILD_NAME;
+
+DEPLOY_APP="docker pull $DOCKER_BUILD_NAME; docker run -d --name $DOCKER_IMAGE_NAME $DOCKER_BUILD_NAME"
+DOCKER_DELETE_PREV="docker rm -f $DOCKER_IMAGE_NAME;"
+eval $DOCKER_DELETE_PREV;
+eval $DEPLOY_APP;

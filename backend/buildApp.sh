@@ -1,0 +1,5 @@
+DOCKER_BUILD_NAME="$DOCKER_USERNAME/fls-server"
+echo "DOCKER BUILD NAME: $DOCKER_BUILD_NAME"
+docker build -t $DOCKER_BUILD_NAME .
+docker login
+docker push $DOCKER_BUILD_NAME;
